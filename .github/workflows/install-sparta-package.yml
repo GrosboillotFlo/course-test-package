@@ -15,9 +15,9 @@ jobs:
         registry-url: https://npm.pkg.github.com/
 
     - name: Install Sparta package
+      run: yarn add @fewlinesco/sparta
       env:
         NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      run: yarn add @fewlinesco/sparta
 
     - name: Commit new version of Sparta package
       env:
